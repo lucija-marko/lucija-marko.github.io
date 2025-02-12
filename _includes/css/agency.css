@@ -361,10 +361,14 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url('/img/backgrounds/header.jpg'); 
+    background-image: url('{{ site.baseurl }}/img/backgrounds/header.gif'); 
     background-position: center center;
+    /*background-position: top center;*/
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
     background-size: cover;
-    background-repeat: no-repeat;
+    -o-background-size: cover;
 }
 
 header .intro-text {
@@ -400,7 +404,7 @@ header .intro-text .intro-heading {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url('{{ site.baseurl }}/img/backgrounds/header.jpg'); 
+    background-image: url('{{ site.baseurl }}/img/backgrounds/header.gif'); 
     /*background-position: center center;*/
     background-position: top center;
     background-repeat: none;
@@ -439,22 +443,6 @@ header .intro-text .intro-heading {
         /*font-weight: 700;*/
         line-height: 75px;
     }
-}
-
-#countdown {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 36px; /* Increase font size */
-    font-weight: bold;
-    color: white;
-    margin-top: 30px;
-}
-.simply-countdown > .simply-section {
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
-    padding: 15px;
-    margin: 10px;
 }
 
 
