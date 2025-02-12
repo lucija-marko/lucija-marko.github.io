@@ -993,3 +993,75 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #{{ site.data.template.color.primary }};
 }
+
+/* Center the Table */
+#stay .container {
+    display: flex;
+    justify-content: center;
+}
+
+/* Style the Table */
+#stay table {
+    width: 80%; /* Adjusts the table width */
+    margin: 0 auto; /* Ensures centering */
+    border-collapse: collapse; /* Removes spacing between cells */
+}
+
+/* Remove Table Borders */
+#stay table, 
+#stay table tr, 
+#stay table td {
+    border: none !important; /* Removes all table borders */
+}
+
+/* Center the Text in Table Cells */
+#stay table td {
+    text-align: center;
+    padding: 20px; /* Adds spacing inside table cells */
+}
+
+/* Ensure it Looks Good on Mobile */
+@media (max-width: 768px) {
+    #stay table {
+        width: 100%; /* Full width on small screens */
+    }
+}
+
+/* Center the table */
+.accommodation-table {
+    width: 100%;
+    margin: auto;
+    border-collapse: collapse; /* Ensures no visible borders */
+}
+
+/* Remove table borders */
+.accommodation-table, 
+.accommodation-table tr, 
+.accommodation-table td {
+    border: none !important; 
+}
+
+/* Center table text */
+.accommodation-table td {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Make table responsive */
+@media (max-width: 768px) {
+    .accommodation-table {
+        display: block;
+        width: 100%;
+    }
+
+    .accommodation-table tr {
+        display: block;
+        width: 100%;
+    }
+
+    .accommodation-table td {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
