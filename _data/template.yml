@@ -3,7 +3,7 @@ color:
   primary: 246d92  # Accent color (buttons, links)
   secondary: f8f9fa  # Background color
   secondary-dark: 343a40  # Dark text
-  muted: 4f8da4  # Muted text
+  muted: 777777  # Muted text
 
 
 font:
