@@ -992,3 +992,23 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #{{ site.data.template.color.primary }};
 }
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.countdown span {
+    display: block;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.countdown li {
+    list-style: none;
+    text-align: center;
+}
