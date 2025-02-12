@@ -992,3 +992,43 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #{{ site.data.template.color.primary }};
 }
+
+/* Remove table borders and make them white */
+table {
+    border-collapse: collapse; /* Ensures borders don't double up */
+    width: 100%;
+}
+
+table td, table th {
+    border: 0; /* Removes all visible table borders */
+    background-color: transparent; /* Makes the background clear */
+    color: #000; /* Ensures text remains visible */
+}
+
+/* Optional: Adjust padding for better spacing */
+table td {
+    padding: 15px;
+}
+
+/* Center the table on the page */
+.table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Ensures table fits well */
+.table-container table {
+    margin: 0 auto;
+}
+
+/* Ensure links stand out */
+table a {
+    color: #007bff; /* Bootstrap primary blue */
+    text-decoration: none;
+}
+
+table a:hover {
+    text-decoration: underline;
+}
