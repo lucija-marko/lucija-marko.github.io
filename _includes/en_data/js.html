@@ -36,3 +36,26 @@
 
 <!-- Custom Theme JavaScript -->
 <script src="{{ "/js/agency.js" | prepend: site.baseurl }}"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        setTimeout(function () {
+            simplyCountdown('#countdown', {
+                year: 2025,
+                month: 5,
+                day: 31,
+                hours: 0,
+                minutes: 0,
+                seconds: 0,
+                words: { 
+                    days: 'Days', 
+                    hours: 'Hours', 
+                    minutes: 'Minutes', 
+                    seconds: 'Seconds' 
+                },
+                plural: true,
+                inline: false,
+                enableUtc: false
+            });
+        }, 500); // Delay by 500ms to ensure DOM is loaded
+    });
+</script>
