@@ -362,7 +362,7 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url('{{ site.baseurl }}/img/backgrounds/header.jpg'); 
+    background-image: url('{{ site.baseurl }}/img/backgrounds/'); 
     background-position: center center;
     /*background-position: top center;*/
     background-repeat: none;
@@ -405,7 +405,7 @@ header .intro-text .intro-heading {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url('{{ site.baseurl }}/img/backgrounds/header.jpg'); 
+    background-image: url('{{ site.baseurl }}/img/backgrounds/'); 
     /*background-position: center center;*/
     background-position: top center;
     background-repeat: none;
@@ -677,19 +677,27 @@ section h3.section-subheading {
         min-height: 100px;
     }
 
-    .timeline>li .timeline-panel {
-        float: left;
-        width: 41%;
-        padding: 0 20px 20px 30px;
-        text-align: right;
+    .timeline > li {
+        display: flex;
+        align-items: center;
     }
+    
+    .timeline > li.timeline-inverted {
+        flex-direction: row-reverse;
+    }
+    
+    .timeline > li .timeline-panel {
+        float: none;
+        width: auto;
+        padding: 20px;
+        text-align: left;
+    }
+    
+    .timeline > li .timeline-image {
+        margin: 0 20px;
+    }
+    
 
-    .timeline>li .timeline-image {
-        left: 50%;
-        width: 100px;
-        height: 100px;
-        margin-left: -50px;
-    }
 
     .timeline>li .timeline-image h4 {
         margin-top: 16px;
@@ -753,6 +761,8 @@ section h3.section-subheading {
         padding: 0 100px 20px 20px;
     }
 }
+
+
 
 .team-member {
     margin-bottom: 50px;
