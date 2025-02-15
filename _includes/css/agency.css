@@ -310,6 +310,12 @@ fieldset[disabled] .btn-m.active {
     transition: all ease .35s;
 }
 
+
+@media (max-width: 768px) {
+    h2 {
+        margin-bottom: 20px; /* Less space for mobile */
+    }
+}
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
     outline: 0;
@@ -392,8 +398,10 @@ header {
     background-repeat: none;
     -webkit-background-size: cover;
     -moz-background-size: cover;
-    background-size: certain;
-    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+-o-background-size: cover;
 }
 
 header .intro-text {
@@ -428,6 +436,9 @@ header .intro-text .intro-heading {
     background-size: cover;
     -o-background-size: cover;
     /*opacity: 0.5;*/
+    height: auto !important;
+        
+    
 	}
 
     header .intro-text {
@@ -811,6 +822,8 @@ section#contact .section-heading {
     color: #fff;
 }
 
+
+
 section#contact .form-group {
     margin-bottom: 25px;
 }
@@ -1009,3 +1022,13 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #{{ site.data.template.color.primary }};
 }
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+@media (max-width: 768px) {
+ 
