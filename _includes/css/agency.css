@@ -398,34 +398,31 @@ header {
 }
 
 header .intro-text {
-    padding-top: 30vh; /* Pushes the text lower on the screen */
-    padding-bottom: 20vh; /* Adjust bottom spacing */
+    padding-top: 100px;
+    padding-bottom: 50px;
 }
 
 header .intro-text .intro-lead-in {
     margin-bottom: 25px;
     /*font-family: {{ site.data.template.font.secondary }};*/
     /*font-family: {{ site.data.template.font.primary }};*/
-    font-family: 'Cardo', serif;
+    font-family: 'Halimun';
     font-weight: 300;
     font-size: 22px;
     /*font-style: italic;*/
     line-height: 22px;
 }
 
-
-
 header .intro-text .intro-heading {
     margin-bottom: 25px;
     /*text-transform: uppercase;*/
     /*font-family: {{ site.data.template.font.primary }};*/
-    font-family: 'Halimun';
+    font-family: 'Ha';
     text-shadow: 2px 2px 4px #000000;
     font-size: 75px;
     /*font-weight: 700;*/
     line-height: 75px;
     padding-bottom: 15px;
-
 }
 
 @media(min-width:768px) {
@@ -442,18 +439,13 @@ header .intro-text .intro-heading {
     background-size: cover;
     -o-background-size: cover;
     /*opacity: 0.5;*/
-    height: 100vh; /* Ensure full-screen height on desktops */
-    min-height: 700px; /* Adjust based on your preference */
-
-        
-    
 	}
 
     header .intro-text {
         /*padding-top: 300px;*/
-        padding-top: 150px;
+        padding-top: 280px;
         /*padding-bottom: 200px;*/
-        padding-bottom: 50px;
+        padding-bottom: 100px;
     }
 
     header .intro-text .intro-lead-in {
@@ -462,7 +454,7 @@ header .intro-text .intro-heading {
         /*font-family: {{ site.data.template.font.primary }};*/
         font-family: 'Cardo';
         font-weight: 300;
-        font-size: 30px;
+        font-size: 40px;
         /*font-style: italic;*/
         line-height: 40px;
     }
@@ -471,7 +463,7 @@ header .intro-text .intro-heading {
         margin-bottom: 100px;
         /*text-transform: uppercase;*/
         /*font-family: {{ site.data.template.font.primary }};*/
-        font-family: 'Halimun' cursive;
+        font-family: 'Halimun';
         text-shadow: 2px 2px 4px #000000;
         font-size: 75px;
         /*font-weight: 700;*/
@@ -480,7 +472,7 @@ header .intro-text .intro-heading {
 }
 
 section {
-    padding: 100px 0;
+    padding: 80px 0;
 }
 
 section h2.section-heading {
