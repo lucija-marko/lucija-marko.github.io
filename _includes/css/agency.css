@@ -101,7 +101,7 @@ h6 {
 }
 
 .bg-light-gray {
-    background-color: #f7f7f7;
+    background-color: #ffff;
 }
 
 .bg-darkest-gray {
@@ -1030,3 +1030,13 @@ body {
     padding: 0 15px;
 }
 
+/* Lucija & Marko in Halimun */
+.navbar-default .navbar-brand {
+    font-family: 'Halimun', cursive;
+}
+
+/* EN/HR buttons + Page navigation links in Cardo */
+.navbar-default .navbar-lang,
+.navbar-default .nav li a {
+    font-family: 'Cardo', serif;
+}
