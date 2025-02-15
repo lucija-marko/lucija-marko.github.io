@@ -368,14 +368,15 @@ header {
     background-repeat: none;
     -webkit-background-size: cover;
     -moz-background-size: cover;
-    background-size: cover;
+    background-size: certain;
     -o-background-size: cover;
 }
 
 header .intro-text {
-    padding-top: 50px;
-    padding-bottom: 100px;
+    padding-top: 30vh; /* Pushes the text lower on the screen */
+    padding-bottom: 20vh; /* Adjust bottom spacing */
 }
+
 
 header .intro-text .intro-lead-in {
     margin-bottom: 25px;
