@@ -667,6 +667,12 @@ section h3.section-subheading {
     align-items: center;
 }
 
+.timeline>li .timeline-panel:before,
+.timeline>li .timeline-panel:after {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 .timeline>li.timeline-inverted>.timeline-panel:before {
     right: auto;
     left: -15px;
