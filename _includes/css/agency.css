@@ -5,10 +5,10 @@
  */
 
  body {
-    overflow-x: hidden;
-    /*font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;*/
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    color: #{{ site.data.template.color.secondary-dark }};
+    font-family: 'Cardo', serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333; /* Adjust as needed */
 }
 
 .text-muted {
@@ -61,17 +61,35 @@ a.active {
     color: #{{ site.data.template.color.secondary }};
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    text-transform: uppercase;
-    font-family: {{ site.data.template.font.primary }};
-    font-weight: 700;
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Halimun', cursive;
+    font-weight: normal;
 }
 
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 32px;
+}
+
+h4 {
+    font-size: 28px;
+}
+
+h5 {
+    font-size: 24px;
+}
+
+h6 {
+    font-size: 20px;
+}
 .img-centered {
     margin: 0 auto;
 }
@@ -780,6 +798,9 @@ section#contact {
     background-repeat: no-repeat;
 }
 
+button, input, textarea, select, nav, .navbar {
+    font-family: 'Cardo', serif;
+}
 section#contact .section-heading {
     color: #fff;
 }
