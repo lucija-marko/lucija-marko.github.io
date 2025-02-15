@@ -833,7 +833,7 @@ button, input, textarea, select, nav, .navbar {
     font-family: 'Cardo', serif;
 }
 section#contact .section-heading {
-    color: #fff;
+    color: #{{ site.data.template.color.primary }}
 }
 
 
