@@ -61,8 +61,13 @@ a.active {
     color: #{{ site.data.template.color.secondary }};
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1 {
     font-family: 'Halimun', cursive;
+    font-weight: normal;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family:  'Cardo', serif;
     font-weight: normal;
 }
 
