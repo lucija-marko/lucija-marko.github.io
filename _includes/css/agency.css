@@ -5,10 +5,11 @@
  */
 
  body {
+    overflow-x: hidden;
     font-family: 'Cardo', serif;
     font-size: 18px;
     line-height: 1.6;
-    color: #333; /* Adjust as needed */
+    color: #{{ site.data.template.color.secondary-dark }};
 }
 
 .text-muted {
@@ -20,7 +21,7 @@
 }
 
 p {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.75;
 }
 
