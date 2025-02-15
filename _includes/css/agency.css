@@ -622,11 +622,6 @@ section h3.section-subheading {
 }
 
 .timeline>li .timeline-panel {
-    float: right;
-    position: relative;
-    width: 100%;
-    padding: 0 20px 0 100px;
-    text-align: left;
     display: flex;
     align-items: center;
     min-height: 100px; /* Adjust based on your timeline image size */
@@ -668,9 +663,6 @@ section h3.section-subheading {
 }
 
 .timeline>li.timeline-inverted>.timeline-panel {
-    float: right;
-    padding: 0 20px 0 100px;
-    text-align: left;
     display: flex;
     align-items: center;
 }
