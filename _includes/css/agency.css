@@ -389,14 +389,13 @@ header {
     background-attachment: scroll;
     background-image: url('{{ site.baseurl }}/img/story/col3-row3.jpg'); 
     background-position: center center;
-    /*background-position: top center;*/
-    background-repeat: none;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; /* Use contain instead of cover */
     width: 100%;
--o-background-size: cover;
+    height: 100vh; /* Ensure it takes the full viewport height */
+    min-height: 600px; /* Adjust as needed */
+    -o-background-size: contain;
+
 }
 
 header .intro-text {
@@ -444,7 +443,9 @@ header .intro-text .intro-heading {
     background-size: cover;
     -o-background-size: cover;
     /*opacity: 0.5;*/
-    height: auto !important;
+    height: 100vh; /* Ensure full-screen height on desktops */
+    min-height: 700px; /* Adjust based on your preference */
+
         
     
 	}
