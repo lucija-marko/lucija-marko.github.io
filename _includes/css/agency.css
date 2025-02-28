@@ -641,7 +641,6 @@ section h3.section-subheading {
     width: 80px;
     height: 80px;
     margin-left: 0;
-    border: 7px solid #f1f1f1;
     border-radius: 100%;
     text-align: center;
     color: #fff;
@@ -1056,32 +1055,11 @@ body {
     height: 80%; /* Maintains aspect ratio */
     max-width: 100%; /* Prevents the image from overflowing */
     max-height: 100%; /* Ensures the image never exceeds the circle */
-    object-fit: contain; /* Keeps the full image visible inside the circle */
     display: block; /* Removes extra spacing issues */
     margin: auto; /* Centers the image */
 }
 
-/* Adjust image sizes for larger screens */
-@media(min-width: 768px) {
-    .timeline>li .timeline-image img {
-        width: 70%;
-        height: 70%;
-    }
-}
 
-@media(min-width: 992px) {
-    .timeline>li .timeline-image img {
-        width: 65%;
-        height: 65%;
-    }
-}
-
-@media(min-width: 1200px) {
-    .timeline>li .timeline-image img {
-        width: 60%;
-        height: 60%;
-    }
-}
 
 @media (max-width: 767px) {
     .timeline:before {
@@ -1102,5 +1080,44 @@ body {
         width: 90%; /* ✅ Prevents text from stretching */
         margin: auto; /* ✅ Centers the panel */
         text-align: center; /* ✅ Ensures text is not stuck to one side */
+    }
+}
+
+.timeline>li .timeline-image {
+    width: 100px; /* Set fixed size for consistency */
+    height: 100px;
+    border: none; /* Remove existing border */
+    overflow: hidden; /* Ensures image does not overflow */
+    border-radius: 50%; /* Makes the image itself circular */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent; /* Remove background */
+}
+
+.timeline>li .timeline-image img {
+    width: 100%; /* Ensure the image fills the container */
+    height: 100%;
+    object-fit: cover; /* Crop to fit nicely inside the circle */
+    border-radius: 50%; /* Ensure the image itself is circular */
+}
+
+@media (max-width: 767px) {
+    /* Reduce space above the text */
+    header .intro-text {
+        padding-top: 180px; /* Move text lower */
+        padding-bottom: 30px; /* Adjust bottom space */
+    }
+
+    /* Reduce subheading (intro-lead-in) size */
+    header .intro-text .intro-lead-in {
+        font-size: 18px; /* Smaller font */
+        line-height: 20px;
+    }
+
+    /* Reduce heading (intro-heading) size */
+    header .intro-text .intro-heading {
+        font-size: 50px; /* Decrease size */
+        line-height: 55px;
     }
 }
