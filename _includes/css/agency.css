@@ -47,6 +47,7 @@ a,
 a:hover,
 a:focus,
 a:active,
+
 a.active {
     outline: 0;
 }
@@ -263,7 +264,7 @@ fieldset[disabled] .btn-m.active {
 }
 .navbar-default {
     border-color: transparent;
-    background-color: #{{ site.data.template.color.primary }};
+    background-color: #222;
     padding-top: 10px;
     padding-left: 10px;
 }
@@ -406,7 +407,7 @@ header .intro-text .intro-lead-in {
     margin-bottom: 25px;
     /*font-family: {{ site.data.template.font.secondary }};*/
     /*font-family: {{ site.data.template.font.primary }};*/
-    font-family: 'Halimun';
+    font-family: 'Cardo';
     font-weight: 300;
     font-size: 22px;
     /*font-style: italic;*/
