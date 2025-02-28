@@ -417,8 +417,7 @@ header .intro-text .intro-lead-in {
 header .intro-text .intro-heading {
     margin-bottom: 25px;
     /*text-transform: uppercase;*/
-    /*font-family: {{ site.data.template.font.primary }};*/
-    font-family: 'Ha';
+    font-family: 'Halimun';
     text-shadow: 2px 2px 4px #000000;
     font-size: 75px;
     /*font-weight: 700;*/
@@ -1081,5 +1080,27 @@ body {
     .timeline>li .timeline-image img {
         width: 60%;
         height: 60%;
+    }
+}
+
+@media (max-width: 767px) {
+    .timeline:before {
+        left: 50%;  /* ✅ Centers the vertical line */
+        transform: translateX(-50%); /* ✅ Ensures perfect centering */
+    }
+}
+
+@media (max-width: 767px) {
+    .timeline>li .timeline-image {
+        left: 50%; /* ✅ Centers the circles */
+        transform: translateX(-50%); /* ✅ Ensures they align with the timeline */
+    }
+}
+
+@media (max-width: 767px) {
+    .timeline>li .timeline-panel {
+        width: 90%; /* ✅ Prevents text from stretching */
+        margin: auto; /* ✅ Centers the panel */
+        text-align: center; /* ✅ Ensures text is not stuck to one side */
     }
 }
