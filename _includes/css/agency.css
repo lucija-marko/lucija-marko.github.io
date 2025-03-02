@@ -708,10 +708,6 @@ section h3.section-subheading {
   text-transform: none;
 }
 
-.timeline .timeline-body>p,
-.timeline .timeline-body>ul {
-  margin-bottom: 0;
-}
 
 @media(min-width:768px) {
   .timeline:before {
