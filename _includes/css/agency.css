@@ -220,6 +220,9 @@ fieldset[disabled] .btn-xl.active {
   font-weight: 700;
   color: #fff;
   background-color: #{{ site.data.template.color.primary }};
+  display: flex;
+  align-items: center; /* Ensures text inside button is centered */
+  justify-content: center;
 }
 
 .btn-m:hover,
@@ -1147,4 +1150,26 @@ body {
     padding-bottom: 15px; /* Adjust bottom padding */
     display: flex;
     align-items: center; /* Ensures content is vertically centered */
+}
+
+/* Make the navbar-header a flex container */
+.navbar-header {
+  display: flex;
+  align-items: center; /* Centers vertically */
+  height: 50px; /* Adjust height to match navbar */
+}
+
+/* Style the language buttons */
+.navbar-lang {
+  display: flex;
+  align-items: center; /* Center buttons vertically */
+  gap: 10px; /* Space between EN and HR */
+  margin-left: 10px; /* Adjust positioning */
+}
+
+
+/* Make navbar links align properly */
+.navbar-default .nav > li {
+  display: flex;
+  align-items: center; /* Vertical centering */
 }
