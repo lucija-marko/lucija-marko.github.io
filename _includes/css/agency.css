@@ -261,6 +261,7 @@ fieldset[disabled] .btn-m.active {
   color: #{{ site.data.template.color.primary }};
   background-color: #fff;
 }
+
 .navbar-default {
   border-color: transparent;
   background-color: #{{ site.data.template.color.primary }};
@@ -1077,5 +1078,31 @@ body {
   header .intro-text .intro-heading {
       font-size: 50px; /* Decrease size */
       line-height: 55px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* Adjust navbar padding for mobile */
+  .navbar-default {
+      padding: 10px 0; /* Reduce padding */
+      background-color: #{{ site.data.template.color.primary }};
+  }
+
+  /* Navbar brand (Lucija & Marko) size adjustment */
+  .navbar-default .navbar-brand {
+      font-size: 1.8em; /* Decrease font size for better fit */
+  }
+
+  /* Adjust navigation links */
+  .navbar-default .nav li a {
+      font-size: 14px; /* Make nav links smaller for mobile */
+      padding: 10px 15px; /* Ensure better spacing */
+  }
+
+  /* Adjust language buttons (btn-m) in navbar */
+  .navbar-default .navbar-lang {
+      display: inline-block;
+      padding: 8px 12px;
+      font-size: 14px;
   }
 }
