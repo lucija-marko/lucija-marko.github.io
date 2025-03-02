@@ -700,7 +700,7 @@ section h3.section-subheading {
 }
 
 .timeline .timeline-heading h4 {
-  margin-top: 0;
+  margin-top: 10;
   color: inherit;
 }
 
@@ -738,7 +738,7 @@ section h3.section-subheading {
   }
 
   .timeline>li .timeline-image h4 {
-      margin-top: 16px;
+      margin-top: 20px;
       font-size: 13px;
       line-height: 18px;
   }
@@ -766,7 +766,7 @@ section h3.section-subheading {
   }
 
   .timeline>li .timeline-image h4 {
-      margin-top: 30px;
+      margin-top: 35px;
       font-size: 18px;
       line-height: 26px;
   }
@@ -792,7 +792,7 @@ section h3.section-subheading {
   }
 
   .timeline>li .timeline-image h4 {
-      margin-top: 40px;
+      margin-top: 45px;
   }
 
   .timeline>li.timeline-inverted>.timeline-panel {
