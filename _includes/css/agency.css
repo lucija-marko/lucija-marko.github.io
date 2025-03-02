@@ -1098,8 +1098,8 @@ body {
 @media (max-width: 767px) {
   /* Reduce space above the text */
   header .intro-text {
-      padding-top: 180px; /* Move text lower */
-      padding-bottom: 30px; /* Adjust bottom space */
+      padding-top: 200px; /* Move text lower */
+      padding-bottom: 20px; /* Adjust bottom space */
   }
 
   /* Reduce subheading (intro-lead-in) size */
