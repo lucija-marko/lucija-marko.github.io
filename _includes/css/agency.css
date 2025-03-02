@@ -662,8 +662,8 @@ section h3.section-subheading {
   width: 80px;
   height: 80px;
   margin-left: 0;
-  border: 7px solid #{{ site.data.template.color.primary }};
-  border-radius: 10%;
+  border: transparent;
+  border-radius: 100%;
   text-align: center;
   color: #fff;
   background-color: #fff;
