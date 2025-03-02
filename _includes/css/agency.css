@@ -219,7 +219,7 @@ fieldset[disabled] .btn-xl.active {
   font-size: 14px;
   font-weight: 700;
   color: #fff;
-  background-color: #{{ site.data.template.color.secondary }};
+  background-color: #{{ site.data.template.color.primary }};
 }
 
 .btn-m:hover,
@@ -1139,4 +1139,12 @@ body {
       padding: 8px 12px;
       font-size: 14px;
   }
+}
+
+.navbar-default .nav > li > a,
+.btn-m {
+    padding-top: 15px;   /* Adjust top padding */
+    padding-bottom: 15px; /* Adjust bottom padding */
+    display: flex;
+    align-items: center; /* Ensures content is vertically centered */
 }
