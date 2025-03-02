@@ -1118,7 +1118,7 @@ body {
 @media (max-width: 767px) {
   /* Adjust navbar padding for mobile */
   .navbar-default {
-      padding: 10px 0; /* Reduce padding */
+      padding: 8px 0; /* Reduce padding */
       background-color: #{{ site.data.template.color.secondary }};
   }
 
