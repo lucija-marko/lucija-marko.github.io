@@ -600,12 +600,14 @@ section h3.section-subheading {
     }
 }
 
+/* ✅ Fixed Timeline Alignment */
 .timeline {
   position: relative;
   padding: 0;
   list-style: none;
 }
 
+/* ✅ Centered timeline line */
 .timeline:before {
   content: "";
   position: absolute;
@@ -616,12 +618,12 @@ section h3.section-subheading {
   background-color: #f1f1f1;
 }
 
+/* ✅ Applied grid layout for correct positioning */
 .timeline>li {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 50% 50%; /* Two equal columns */
   align-items: center;
   margin-bottom: 50px;
-  text-align: right; /* Align text to the right by default */
 }
 
 /* Ensure correct stacking order */
@@ -635,22 +637,18 @@ section h3.section-subheading {
   clear: both;
 }
 
-/* Panel containing event title, time, and location */
+
+/* ✅ Text is aligned to the right for normal items */
 .timeline>li .timeline-panel {
-  text-align: center;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: right;
+  padding-right: 20px;
 }
 
-/* Timeline circles */
 .timeline>li .timeline-image {
-  position: relative;
-  margin: 10px auto;
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   border-radius: 100%;
+  margin: auto;
 }
 
 .timeline>li .timeline-image h4 {
@@ -659,26 +657,26 @@ section h3.section-subheading {
   line-height: 14px;
 }
 
-/* Title, Time, and Location Alignment */
+
 .timeline .timeline-panel h4 {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   font-size: 22px;
 }
 
 .timeline .timeline-panel h4.subheading {
-  margin-top: 5px;
   font-size: 18px;
   font-weight: bold;
 }
+
 
 .timeline .timeline-panel h6 {
   margin-top: 5px;
   font-style: italic;
 }
 
-/* Reverse order for inverted events */
+
 .timeline>li.timeline-inverted {
-  flex-direction: column-reverse;
+  grid-template-columns: 50% 50%;
 }
 
 @media(min-width:768px) {
@@ -700,8 +698,8 @@ section h3.section-subheading {
 
   .timeline>li .timeline-image {
       left: 50%;
-      width: 100px;
-      height: 100px;
+      width: 120px;
+      height: 120px;
       margin-left: -50px;
   }
 
@@ -711,12 +709,11 @@ section h3.section-subheading {
       line-height: 18px;
   }
 
-  .timeline>li.timeline-inverted>.timeline-panel {
-      float: right;
-      padding: 0;
-      text-align: center;
+  .timeline>li.timeline-inverted .timeline-panel {
+    text-align: left;
+    padding-left: 20px;
   }
-}
+  
 
 @media(min-width:992px) {
   .timeline>li {
@@ -768,6 +765,10 @@ section h3.section-subheading {
   }
 }
 
+/* ✅ Ensured correct image positioning */
+.timeline>li.timeline-inverted .timeline-image {
+  order: 2; /* Image on the right */
+}
 
 .team-member {
   margin-bottom: 50px;
