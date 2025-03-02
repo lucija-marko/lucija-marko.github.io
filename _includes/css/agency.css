@@ -406,7 +406,7 @@ header .intro-text .intro-lead-in {
   margin-bottom: 25px;
   /*font-family: {{ site.data.template.font.secondary }};*/
   /*font-family: {{ site.data.template.font.primary }};*/
-  font-family: 'Halimun';
+  font-family: 'Cardo';
   font-weight: 300;
   font-size: 22px;
   /*font-style: italic;*/
@@ -1044,4 +1044,24 @@ body {
 .navbar-default .navbar-lang,
 .navbar-default .nav li a {
   font-family: 'Cardo', serif;
+}
+
+@media (max-width: 767px) {
+  /* Reduce space above the text */
+  header .intro-text {
+      padding-top: 180px; /* Move text lower */
+      padding-bottom: 30px; /* Adjust bottom space */
+  }
+
+  /* Reduce subheading (intro-lead-in) size */
+  header .intro-text .intro-lead-in {
+      font-size: 18px; /* Smaller font */
+      line-height: 20px;
+  }
+
+  /* Reduce heading (intro-heading) size */
+  header .intro-text .intro-heading {
+      font-size: 50px; /* Decrease size */
+      line-height: 55px;
+  }
 }
