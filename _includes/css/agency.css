@@ -443,7 +443,7 @@ header {
 
   header .intro-text {
       /*padding-top: 300px;*/
-      padding-top: 380px;
+      padding-top: 450px;
       /*padding-bottom: 200px;*/
       padding-bottom: 50px;
   }
@@ -460,7 +460,7 @@ header {
   }
 
   header .intro-text .intro-heading {
-      margin-bottom: 100px;
+      margin-bottom: 50px;
       /*text-transform: uppercase;*/
       /*font-family: {{ site.data.template.font.primary }};*/
       font-family: 'Halimun';
