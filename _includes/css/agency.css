@@ -220,7 +220,7 @@ fieldset[disabled] .btn-xl.active {
   font-weight: 700;
   color: #fff;
   background-color: #{{ site.data.template.color.primary }};
-  display: flex;
+  display: inline-flex;
   align-items: center; /* Ensures text inside button is centered */
   justify-content: center;
 }
