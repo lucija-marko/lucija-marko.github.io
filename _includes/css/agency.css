@@ -584,21 +584,55 @@ section h3.section-subheading {
 @media (max-width: 767px) {
     /* Reduce space above the text */
     header .intro-text {
+      
         padding-top: 180px; /* Move text lower */
         padding-bottom: 30px; /* Adjust bottom space */
     }
 
     /* Reduce subheading (intro-lead-in) size */
     header .intro-text .intro-lead-in {
+        font-family: 'Cardo', serif !important;
         font-size: 18px; /* Smaller font */
         line-height: 20px;
     }
 
     /* Reduce heading (intro-heading) size */
     header .intro-text .intro-heading {
+      font-family: 'Halimun', cursive !important;
         font-size: 50px; /* Decrease size */
         line-height: 55px;
+
     }
+
+    .navbar-default {
+      padding: 8px 0; /* Reduce thickness */
+      background-color: transparent; /* Make it transparent */
+      transition: background-color 0.3s ease-in-out;
+  }
+
+  /* Change navbar color when scrolling */
+  .navbar-default.navbar-shrink {
+      background-color: black; /* Change to black */
+  }
+
+  /* Navbar brand (Lucija & Marko) size adjustment */
+  .navbar-default .navbar-brand {
+      font-size: 1.8em; /* Adjust size */
+      font-family: 'Halimun', cursive !important; /* Ensure Halimun */
+  }
+
+  /* Adjust navigation links */
+  .navbar-default .nav li a {
+      font-size: 14px; /* Adjust font size */
+      padding: 8px 10px; /* Better spacing */
+  }
+
+  /* Adjust language buttons */
+  .navbar-default .navbar-lang {
+      display: inline-block;
+      padding: 6px 10px;
+      font-size: 14px;
+  }
 }
 
 .timeline {
