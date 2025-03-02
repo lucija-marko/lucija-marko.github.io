@@ -1,6 +1,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script>
-    $(function(){
+<script>
+$(function(){
     $(".ajaxForm").submit(function(e){
         e.preventDefault();
         var href = $(this).attr("action");
@@ -11,23 +11,27 @@
             data: $(this).serialize(),
             success: function(response){
                 if(response.status == "success"){
-                    alert('Hvala! Vaša poruka je poslana :).');
-                    window.location.href = 'https://lucija-marko.github.io/hr/#contact';
+                    alert('Thank you! Your message has been sent :).');
+                    window.location.href = 'https://lucija-marko.github.io/en/#contact';
                 }else{
-                    alert("Dogodila se greška: " + response.message);
+                    alert("An error occurred: " + response.message);
                 }
             }
         });
     });
-    });
+});
 </script>
 <section id="contact">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading">Kontakt i RSVP</h2>
-                <h3 class="section-subheading text-muted">Molimo da nam javite do 31.5. 2025. hoćete li moći doći na pir. 
-                    Pošaljite nam mail na <a href="mailto:lucija.krusic1@gmail.com">lucija.krusic1@gmail.com</a> ili na <a href="mailto:marko.brozic01@gmail.com">marko.brozic01@gmail.com</a> ili nas jednostavno nayivite :).</h3>
+                <h2 class="section-heading">Contact & RSVP</h2>
+                <h3 class="section-subheading text-muted">
+                    Please let us know by May 31, 2025, if you will be able to attend the wedding.
+                    Send us an email at <a href="mailto:lucija.krusic1@gmail.com">lucija.krusic1@gmail.com</a>
+                    or <a href="mailto:marko.brozic01@gmail.com">marko.brozic01@gmail.com</a>, 
+                    or simply give us a call :).
+                </h3>
             </div>
         </div>
         <div class="row">
@@ -37,24 +41,24 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="control-group form-group">
-                                <input type="text" class="form-control" placeholder="Vaše ime" id="name" name="name" required data-validation-required-message="Unesite ime i prezime.">
+                                <input type="text" class="form-control" placeholder="Your name" id="name" name="name" required data-validation-required-message="Please enter your full name.">
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="control-group form-group">
-                                <input type="email" class="form-control" placeholder="Vaš mail" id="email" name="email" required data-validation-required-message="Unesite vaš mail.">
+                                <input type="email" class="form-control" placeholder="Your email" id="email" name="email" required data-validation-required-message="Please enter your email.">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="control-group form-group">
-                                <textarea class="form-control" placeholder="Vaša poruka" id="message" name="message" required data-validation-required-message="Koja je vaša poruka?"></textarea>
+                                <textarea class="form-control" placeholder="Your message" id="message" name="message" required data-validation-required-message="What is your message?"></textarea>
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="clearfix"></div>
                         <div class="col-lg-12 text-center">
                             <div id="success"></div>
-                            <button type="submit" class="btn btn-xl">Pošalji poruku</button>
+                            <button type="submit" class="btn btn-xl">Send message</button>
                         </div>
                     </div>
                 </form>
