@@ -219,7 +219,7 @@ fieldset[disabled] .btn-xl.active {
   font-size: 14px;
   font-weight: 700;
   color: #fff;
-  background-color: #{{ site.data.template.color.primary }};
+  background-color: #{{ site.data.template.color.secondary }};
 }
 
 .btn-m:hover,
@@ -227,7 +227,7 @@ fieldset[disabled] .btn-xl.active {
 .btn-m:active,
 .btn-m.active,
 .open .dropdown-toggle.btn-m {
-  border-color: #{{ site.data.template.color.primary }};
+  border-color: #{{ site.data.template.color.secondary }};
   color: #fff;
   background-color: #{{ site.data.template.color.secondary }};
 }
@@ -333,7 +333,7 @@ fieldset[disabled] .btn-m.active {
 .brand {
   /*font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;*/
   font-family: "Halimun", "Cardo" ,"Helvetica Neue",Helvetica,Arial,cursive;
-  color: #{{ site.data.template.color.primary }};
+  color: #{{ site.data.template.color.secondary }};
   font-size: 1.5em;
 }
 
