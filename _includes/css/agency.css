@@ -662,11 +662,11 @@ section h3.section-subheading {
   width: 80px;
   height: 80px;
   margin-left: 0;
-  border: 7px solid #f1f1f1;
+  border: transparent;
   border-radius: 100%;
   text-align: center;
   color: #fff;
-  background-color: #{{ site.data.template.color.primary }};
+  background-color: #fff;
 }
 
 .timeline>li .timeline-image h4 {
@@ -805,7 +805,6 @@ aside.clients img {
 
 section#contact {
   background-color: #fff;
-  background-image: url('{{ site.baseurl }}/img/backgrounds/contact-bg.png');
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
