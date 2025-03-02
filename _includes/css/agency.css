@@ -1152,3 +1152,11 @@ body {
     align-items: center; /* Ensures content is vertically centered */
 }
 
+/* Ensure the language buttons appear next to each other */
+.navbar-lang {
+  display: flex;
+  align-items: center; /* Centers the buttons vertically */
+  gap: 10px; /* Space between buttons */
+  margin-left: 10px; /* Adjust positioning */
+  flex-direction: row; /* Ensures they are next to each other */
+}
