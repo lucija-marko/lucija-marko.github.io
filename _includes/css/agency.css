@@ -211,7 +211,7 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .btn-m {
-  padding: 3px 3px;
+  padding: 10px 10px;
   border-color: #{{ site.data.template.color.primary }};
   border-radius: 3px;
   text-transform: uppercase;
