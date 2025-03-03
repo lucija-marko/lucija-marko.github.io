@@ -220,7 +220,6 @@ fieldset[disabled] .btn-xl.active {
   font-weight: 700;
   color: #fff;
   background-color: #{{ site.data.template.color.primary }};
-  display: inline-flex;
   align-items: center; /* Ensures text inside button is centered */
   justify-content: center;
 }
@@ -1136,27 +1135,4 @@ body {
       padding: 10px 15px; /* Ensure better spacing */
   }
 
-  /* Adjust language buttons (btn-m) in navbar */
-  .navbar-default .navbar-lang {
-      display: inline-block;
-      padding: 8px 12px;
-      font-size: 14px;
-  }
-}
-
-.navbar-default .nav > li > a,
-.btn-m {
-    padding-top: 15px;   /* Adjust top padding */
-    padding-bottom: 15px; /* Adjust bottom padding */
-    display: flex;
-    align-items: center; /* Ensures content is vertically centered */
-}
-
-/* Ensure the language buttons appear next to each other */
-.navbar-lang {
-  display: flex;
-  align-items: center; /* Centers the buttons vertically */
-  gap: 10px; /* Space between buttons */
-  margin-left: 10px; /* Adjust positioning */
-  flex-direction: row; /* Ensures they are next to each other */
-}
+  
